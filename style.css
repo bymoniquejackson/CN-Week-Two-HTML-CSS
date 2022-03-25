@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+
+*:after {
+
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+}
+
+/*container____________________________________________________________________________________*/
+.flex-nav ul {
+  display: flex; 
+  border: 1px solid black;
+  background:rgba(0, 0, 0, 0.2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  width: 15%;
+}
+.social {
+  width: 7.5%
+} 
+
+/*text and hover____________________________________________________________________________________*/
+a {
+  color:white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
+}
+
+a:hover {
+  background:rgba(0, 0, 0, 0.3);
+}
+
+
+/*Desktop/laptio devices________________________________________________________________________________________*/
+@media all and (max-width: 1000px) {
+  .wrapper{
+    flex-wrap: wrap;
+      /* justify-content: space-evenly; */
+  }
+}
+
+/*tablet/phablet like devices _______________________________________________________________________________________*/
+@media all and (max-width: 750px) {
+  
+  .flex-nav ul {
+      /* display: flex; */
+    flex-wrap: wrap;
+      /* justify-content: space-evenly; */
+  }
+
+  li {
+    width: 50%;
+
+  }
+
+.social {
+width: 25%;
+
+} 
+
+/*small screens such as mobiles________________________________________________________________________________________*/
+
+
+@media all and (max-width: 480px) {
+
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+  
+  li {
+width: 100%;
+  }
+
+  
+  }
+}
